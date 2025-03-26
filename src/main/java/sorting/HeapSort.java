@@ -13,7 +13,7 @@ public class HeapSort {
         for (int i = size/2; i >= 1; i--)
             sink(i);
 
-        // sort by repeatedly removing the max value
+        // sort by repeatedly extracting the max value
         while (this.size > 1) {
             swap(1, this.size);
             this.size--;
