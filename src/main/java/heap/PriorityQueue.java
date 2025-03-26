@@ -55,9 +55,7 @@ public class PriorityQueue {
         while (2 * i <= this.size) {
             int j = 2 * i;
             if (j < this.size && less(j, j + 1)) j++;
-
             if (!less(i, j)) break;
-
             swap(i, j);
             i = j;
         }
